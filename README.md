@@ -1,2 +1,1 @@
-Odliczanie
-==========
+ZROBIĆ MATRIXA xD
