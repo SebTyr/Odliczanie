@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int IleMamyCzasu, LiczbaDomow, PotrzebneGodziny;
+
+            IleMamyCzasu = 0;
+            PotrzebneGodziny = 0;
+
+
+            Console.WriteLine("ile mamy czasu ?");
+            IleMamyCzasu = int.Parse(Console.ReadLine());
+
+            LiczbaDomow = 0;
+
+            
+
+            while(IleMamyCzasu >PotrzebneGodziny)
+            {
+                LiczbaDomow++;
+                PotrzebneGodziny = PotrzebneGodziny + 3;
+                //Console.WriteLine("wybudujemy " + LiczbaDomow + "domow.");
+            }
+            Console.WriteLine("wybudujemy " + LiczbaDomow + "domow.");
+        }
+    }
+}
