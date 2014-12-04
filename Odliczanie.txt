@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int CzasWybuchu, Boom;
+
+
+            Console.WriteLine("Po ilu sekundach ma nastąpić wybuch ?");
+            CzasWybuchu = int.Parse(Console.ReadLine());
+
+
+            for (int i = 1; i <= CzasWybuchu; i++)
+            {
+                Boom = CzasWybuchu - i;
+                Thread.Sleep(1000);
+                Console.WriteLine("Wybuch nastąpi po " + Boom + " sekundach.");
+                if (Boom == 0)
+                {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Boom");
+                }
+
+
+            }
+        }
+    }
+}
